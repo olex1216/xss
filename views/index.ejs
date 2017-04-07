@@ -20,7 +20,7 @@
     		try {
     			HTMLParse(he.unescape(str,{strict:true}),{
     				start: function(tag,attrs,unary) {
-    					if (tag = 'script'|| tag = 'img' || tag = 'iframe' || tag = 'frame' || tag = 'style' || tag = 'link' ) {
+    					if (tag == 'script'|| tag == 'img' || tag == 'iframe' || tag == 'frame' || tag == 'style' || tag == 'link' ) {
     						return;
     					}
     					results += '<' + tag;
